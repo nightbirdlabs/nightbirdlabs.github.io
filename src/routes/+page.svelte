@@ -7,18 +7,13 @@
 	<title>Nightbird Engine</title>
 </svelte:head>
 
-<div class="space-y-5 py-15 lg:py-25 xl:py-35">
-	<h1 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+<div class="space-y-5 py-10 lg:py-25 xl:py-35">
+	<h1 class="text-5xl md:text-6xl xl:text-7xl font-bold">
 		Nightbird Labs
 	</h1>
 	<p class="text-xl md:text-2xl">
-		Nightbird Labs
+		Nightbird Labs are building experimental open-source software. Our flagship project is Nightbird Engine, a new cross-platform game engine for Windows, Linux, Wii U, and 3DS.
 	</p>
-	<div class="py-5">
-		<a href="https://github.com/nightbirdlabs" class="cursor-pointer rounded-lg px-4 py-3 text-lg text-white bg-pink-700 hover:bg-pink-600 transition-colors">
-			Check it out on GitHub
-		</a>
-	</div>
 </div>
 
 <div class="space-y-7">

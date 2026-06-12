@@ -1,7 +1,12 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import '../app.css';
-	
+
 	let { children } = $props();
+	let isEngine = $derived(
+		$page.url.pathname.startsWith('/engine') ||
+		$page.data.meta?.tags?.includes('nightbird-engine')
+	);
 </script>
 
 <style>
@@ -25,13 +30,14 @@
 	</div>
 </div>
 
-<header class="flex items-center sticky top-0 px-5 py-6 space-x-5 backdrop-blur-md bg-slate-50/50 dark:bg-slate-950/50 dark:border-b dark:border-slate-50">
+<header class="flex items-center sticky top-0 px-5 py-6 space-x-7 backdrop-blur-md bg-slate-50/50 dark:bg-slate-950/50 dark:border-b dark:border-slate-50">
 	<a href="/" class="flex items-center space-x-1 text-3xl font-semibold text-black dark:text-white">
 		<img src="/logo-white.svg" alt="Nightbird Logo" class="w-16 h-16 hidden dark:block" />
 		<img src="/logo-black.svg" alt="Nightbird Logo" class="w-16 h-16 dark:hidden" />
 		<span>Nightbird</span>
 	</a>
-	<nav>
+	<nav class="space-x-5">
+		<a href="/engine" class="text-xl text-black dark:text-white">Engine</a>
 		<a href="/blog" class="text-xl text-black dark:text-white">Blog</a>
 	</nav>
 </header>
@@ -43,6 +49,8 @@
 </div>
 
 <footer class="flex flex-col text-center justify-center py-5 bg-slate-50/50 dark:bg-slate-950/50 dark:border-t dark:border-slate-50 text-gray-700 dark:text-gray-400">
-	<p>&copy; 2026 Nightbird Engine. All rights reserved.</p>
-	<p>Not affiliated with, endorsed by, or associated with Nintendo. Wii U and Nintendo 3DS are trademarks of Nintendo Co., Ltd.</p>
+	<p>&copy; 2026 Nightbird Labs. All rights reserved.</p>
+	{#if isEngine}
+		<p>Not affiliated with, endorsed by, or associated with Nintendo. Wii U and Nintendo 3DS are trademarks of Nintendo Co., Ltd.</p>
+	{/if}
 </footer>

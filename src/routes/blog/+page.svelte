@@ -9,7 +9,7 @@
 	<title>Blog | Nightbird</title>
 </svelte:head>
 
-<h1 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+<h1 class="text-5xl md:text-6xl xl:text-7xl font-bold">
 	Blog
 </h1>
 

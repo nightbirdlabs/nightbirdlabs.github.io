@@ -7,8 +7,8 @@
 	<title>Nightbird Engine</title>
 </svelte:head>
 
-<div class="space-y-5 py-15 lg:py-25 xl:py-35">
-	<h1 class="text-4xl md:text-5xl xl:text-6xl font-bold">
+<div class="space-y-5 py-10 lg:py-25 xl:py-35">
+	<h1 class="text-5xl md:text-6xl xl:text-7xl font-bold">
 		Nightbird Engine
 	</h1>
 	<p class="text-xl md:text-2xl">
@@ -44,7 +44,7 @@
 		Why use Nightbird?
 	</h1>
 	<p class="text-xl md:text-2xl">
-		Frankly, we do not currently recommend it. Nightbird is still in pre-alpha, with many more features and refinements planned before a proper release. The engine is constantly improving with the aim of providing reliable cross-platform development for Windows, Linux, Wii U, and 3DS.
+		Frankly, we do not recommend it yet. Nightbird is still in pre-alpha, with many more features and refinements planned before a proper release. The engine is constantly improving with the aim of providing reliable cross-platform development for Windows, Linux, Wii U, and 3DS.
 	</p>
 </div>
 
