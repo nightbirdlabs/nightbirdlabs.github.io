@@ -7,7 +7,7 @@
 	<title>Nightbird Engine</title>
 </svelte:head>
 
-<div class="space-y-5 py-10 lg:py-25 xl:py-35">
+<div class="space-y-5 py-0 md:py-5 lg:py-10 xl:py-15">
 	<h1 class="text-5xl md:text-6xl xl:text-7xl font-bold">
 		Nightbird Engine
 	</h1>
