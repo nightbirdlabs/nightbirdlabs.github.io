@@ -8,7 +8,7 @@
 	export let imageSvg: string = '';
 </script>
 
-<a href="/blog/{slug}" class="group block h-100 p-4 border-2 rounded-lg border-gray-500 dark:border-gray-300 bg-slate-50/30 dark:bg-slate-950/30 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors">
+<a href="/blog/{slug}" class="group block min-h-100 p-4 border-2 rounded-lg border-gray-500 dark:border-gray-300 bg-slate-50/30 dark:bg-slate-950/30 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors">
 	<picture>
 		{#if imageSvg}
 			<source srcset={imageSvg} type="image/svg+xml" />
