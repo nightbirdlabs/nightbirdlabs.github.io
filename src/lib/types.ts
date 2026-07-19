@@ -3,6 +3,7 @@ export type Post = {
 	title: string;
 	author: string;
 	date: string;
+	editDate: string;
 	description?: string;
 	image?: string;
 	imageSvg?: string;

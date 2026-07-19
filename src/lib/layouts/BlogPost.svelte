@@ -2,6 +2,7 @@
 	export let title: string;
 	export let author: string;
 	export let date: string;
+	export let editDate: string;
 	export let image: string;
 	export let imageSvg: string;
 	export let tags: string[] | undefined = undefined;
@@ -25,6 +26,12 @@
 				By {author} &bull;
 				<time datetime={date}>
 					{new Date(date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
+				</time>
+			</p>
+			<p class="text-md text-gray-700 dark:text-gray-300">
+				Last edited
+				<time datetime={editDate}>
+					{new Date(editDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
 				</time>
 			</p>
 			{#if tags && tags.length > 0}

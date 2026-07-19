@@ -20,7 +20,7 @@
 	<p class="text-md text-gray-700 dark:text-gray-300 mb-1">
 		By {author} &bull;
 		<time datetime={date}>
-			{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+			{new Date(date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
 		</time>
 	</p>
 	<h2 class="text-lg font-semibold">

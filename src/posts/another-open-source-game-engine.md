@@ -2,6 +2,7 @@
 title: Another Open-Source Game Engine?
 author: Lycia Stenson
 date: 2026-05-08
+editDate: 2026-07-19
 description: What's one more game engine in 2026? Cross-platform support across Windows, Linux, Wii U, and 3DS.
 image: /posts/another-open-source-game-engine/image.jpg
 imageSvg: /posts/another-open-source-game-engine/image.svg
@@ -25,7 +26,7 @@ Your project code lives wherever you choose, separate from the engine and editor
 The renderer is part of the backend, using Vulkan on desktop, GX2 on Wii U, and PICA200 on 3DS. The different graphics APIs are abstracted behind one interface, and your project never calls them directly.
 
 # What's next?
-With the project system operational across all platforms, the focus has shifted back to graphics. Skyboxes are already working in the editor, with cooking for desktop and support for Wii U and 3DS coming soon. Lighting is next, with fragment lighting for desktop and Wii U while the 3DS will use vertex lighting. After that will be shadow mapping.
+With the project system operational across all platforms, the focus has shifted back to graphics. Skyboxes are already working in the editor, with cooking for desktop and support for Wii U and 3DS coming soon. Lighting is next, with programmable fragment lighting for desktop and Wii U, while the 3DS will use fixed-function fragment lighting. After this will be skyboxes and shadow mapping.
 
 The long term goal is a complete enough feature set that small 3D games can be built and shipped across all four targets from a single project. When the time is right, installers for prepackaged engine and editor builds will be provided.
 
